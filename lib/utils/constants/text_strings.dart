@@ -5,6 +5,9 @@
 /// This class contains all the App Text in String formats.
 class TTexts {
 
+  static const String welcome = "Welcome Back,";
+  static const String description = "Discover Limitless Choices and Unmatched Convenience";
+
   static const String submit = "Submit";
   static const String appName = "E-Store";
   static const String tContinue = "Continue";
