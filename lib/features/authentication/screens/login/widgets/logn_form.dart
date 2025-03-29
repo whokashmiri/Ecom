@@ -1,5 +1,8 @@
+import 'package:app/features/authentication/screens/signup.widget/signup.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../../utils/constants/sizes.dart';
@@ -76,7 +79,7 @@ class TLoginFrom extends StatelessWidget {
             SizedBox(
               width: double.infinity, // Fixing incorrect syntax
               child: OutlinedButton(
-                onPressed: () {}, // Fixing the onPressed parameter
+                onPressed: () => Get.to(()=> const SignupScreen()), // Fixing the onPressed parameter
                 child: const Text(TTexts.createAccount),
               ),
             ),
