@@ -1,20 +1,19 @@
+import 'package:app/features/authentication/screens/signup/verify_email.dart';
 import 'package:app/features/authentication/screens/signup/widgets/terms_conditions_checkbox.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
 
 class TSignupForm extends StatelessWidget {
-  const TSignupForm({
-    super.key,
-  });
-
+  const TSignupForm({super.key});
 
   @override
   Widget build(BuildContext context) {
-
     return Form(
       child: Column(
         children: [
@@ -80,7 +79,8 @@ class TSignupForm extends StatelessWidget {
             decoration: const InputDecoration(
               labelText: TTexts.password,
               prefixIcon: Icon(Iconsax.password_check),
-              suffixIcon: Icon(Iconsax.eye_slash), // Eye icon for show/hide password
+              suffixIcon: Icon(Iconsax.eye_slash),
+              // Eye icon for show/hide password
               border: OutlineInputBorder(),
             ),
           ),
@@ -94,7 +94,7 @@ class TSignupForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () => Get.to(() => const VerifyEmailScreen()),
               child: const Text(TTexts.createAccount),
             ),
           ),
@@ -103,4 +103,3 @@ class TSignupForm extends StatelessWidget {
     );
   }
 }
-
