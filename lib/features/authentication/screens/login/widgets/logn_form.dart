@@ -1,3 +1,4 @@
+import 'package:app/features/authentication/screens/password_configuration/reset_password.dart';
 import 'package:app/features/authentication/screens/signup/signup.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -55,9 +56,9 @@ class TLoginFrom extends StatelessWidget {
                   ],
                 ),
 
-                //forget
+                //forget password
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(() => const ForgetPassword()),
                   child: const Text(TTexts.forgetPassword),
                 ),
               ],

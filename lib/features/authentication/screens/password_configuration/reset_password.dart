@@ -1,5 +1,6 @@
 import 'package:app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 
 import '../../../../utils/constants/text_strings.dart';
 
@@ -28,8 +29,23 @@ class ForgetPassword extends StatelessWidget {
             const SizedBox(height: TSizes.spaceBtwSections * 2),
 
             // Text Field
+            TextFormField(
+              decoration: const InputDecoration(
+                labelText: TTexts.email,
+                prefixIcon: Icon(Iconsax.direct_right),
+              ),
+            ),
 
-            // Submit Button
+            const SizedBox(height: TSizes.spaceBtwSections),
+
+            /// Submit Button
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: () {},
+                child: const Text(TTexts.submit),
+              ),
+            ),
           ],
         ),
       ),
