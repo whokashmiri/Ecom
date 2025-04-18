@@ -8,6 +8,7 @@ import 'package:iconsax/iconsax.dart';
 
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
+import '../../password_configuration/forget_password.dart';
 
 class TLoginFrom extends StatelessWidget {
   const TLoginFrom({

@@ -11,6 +11,8 @@ class TTexts {
   static const String submit = "Submit";
   static const String appName = "E-Store";
   static const String tContinue = "Continue";
+  static const String done = "Done";
+
 
 // -- GLOBAL Texts
 // -- OnBoarding Texts
