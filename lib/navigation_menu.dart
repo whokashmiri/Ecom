@@ -16,8 +16,8 @@ class NavigationMenu extends StatelessWidget {
         () =>NavigationBar(
         height: 80,
         elevation: 0,
-        selectedIndex: 0,
-        onDestinationSelected: (index) =>,
+        selectedIndex: controller.selectedIndex.value,
+        onDestinationSelected: (index) => controller.selectedIndex.value = index,
         destinations: [
           NavigationDestination(
             icon: Icon(Iconsax.home),
