@@ -1,3 +1,4 @@
+import 'package:app/common/widgets/custom_shapes/curved_edges/curved_edges.dart';
 import 'package:flutter/material.dart';
 import '../../../../common/widgets/custom_shapes/containers/circular_container.dart';
 import '../../../../utils/constants/colors.dart';
@@ -12,7 +13,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: [
             ClipPath(
-              clipper: ,
+              clipper: TCustomCurvedEdges(),
               child: Container(
                 color: TColors.primary,
                 padding: const EdgeInsets.all(0),
