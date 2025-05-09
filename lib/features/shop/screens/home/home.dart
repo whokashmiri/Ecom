@@ -13,21 +13,31 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: [
             ClipPath(
-              clipper: TCustomCurvedEdges(
-                  child: Container(
-                    color: TColors.primary,
-                    padding: const EdgeInsets.all(0),
-                    child: SizedBox(
-                      height: 400,
-                      child: Stack(
-                        children: [
-                          Positioned(top: -150, right:-250, child: TCircularContainer(backgroundColor: TColors.textWhite.withOpacity(0.1))),
-                          Positioned(top: 100, right:-300, child: TCircularContainer(backgroundColor: TColors.textWhite.withOpacity(0.1))),
-
-                        ],
+              clipper: TCustomCurvedEdges(),
+              child: Container(
+                color: TColors.primary,
+                padding: const EdgeInsets.all(0),
+                child: SizedBox(
+                  height: 400,
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        top: -150,
+                        right: -250,
+                        child: TCircularContainer(
+                          backgroundColor: TColors.textWhite.withOpacity(0.1),
+                        ),
                       ),
-                    ),
-                  );
+                      Positioned(
+                        top: 100,
+                        right: -300,
+                        child: TCircularContainer(
+                          backgroundColor: TColors.textWhite.withOpacity(0.1),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ),
             ),
           ],
@@ -39,9 +49,12 @@ class HomeScreen extends StatelessWidget {
 
 class TCurvedEdgeWidget extends StatelessWidget {
   const TCurvedEdgeWidget({
-    super.key, this.child,
+    super.key,
+    this.child,
   });
+
   final Widget? child;
+
   @override
   Widget build(BuildContext context) {
     return ClipPath(
