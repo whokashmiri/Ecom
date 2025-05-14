@@ -27,7 +27,7 @@ class NavigationMenu extends StatelessWidget {
                   ? Colors.white.withOpacity(0.1)
                   : TColors.black.withOpacity(0.1),
           destinations: [
-            NavigationDestination(icon: Icon(.home), label: 'Home'),
+            NavigationDestination(icon: Icon(Iconsax.home), label: 'Home'),
             NavigationDestination(icon: Icon(Iconsax.shop), label: 'Store'),
             NavigationDestination(icon: Icon(Iconsax.heart), label: 'WishList'),
             NavigationDestination(icon: Icon(Iconsax.user), label: 'User'),
