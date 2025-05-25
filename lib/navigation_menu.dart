@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
-class NavigationMenu extends  {
+class NavigationMenu extends StatelessWidget {
   const NavigationMenu({super.key});
 
   @override
