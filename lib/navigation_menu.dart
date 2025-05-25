@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
-class NavigationMenu extends StatelessWidget {
+class NavigationMenu extends StatelessWidget{
   const NavigationMenu({super.key});
 
   @override
@@ -34,7 +34,7 @@ class NavigationMenu extends StatelessWidget {
           ],
         ),
       ),
-      body: Obx(() => controller.screens[controller.selectedIndex.value]),
+      body: Obx(() => controller.screens[controller.selectedIndex.]),
     );
   }
 }
