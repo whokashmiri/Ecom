@@ -24,9 +24,7 @@ class TTexts {
   static const String onBoardingSubTitle2 = "For Seamless Transactions, Choose Your Payment Path";
   static const String onBoardingSubTitle3 = "From Our Doorstep to Yours - Swift, Secure";
 
-// -- Home
-  static const String homeAppbarTitle = "Good day for shopping";
-  static const String homeAppbarSubTitle = "Aaqib Mir";
+
 
 
   // -- Authentication Form Text
@@ -65,4 +63,8 @@ class TTexts {
   static const String emailNotReceivedMessage = "Didn't get the email? Check your junk/spam or resend it.";
   static const String yourAccountCreatedTitle = "Your account successfully created!";
   static const String yourAccountCreatedSubTitle = "Welcome to Your Ultimate Shopping Destination: Your Account is Created, Unleash the Joy of Seamless Online Shopping!";
+
+  //__HOME
+  static const String homeAppbarTitle = "Shop Well";
+  static const String homeAppbarSubTitle = "Aaqib Bashir Mir";
 }
